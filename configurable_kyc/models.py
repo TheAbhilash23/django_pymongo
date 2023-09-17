@@ -13,13 +13,19 @@ class KYC(BaseModelCollection):
         description='Your name that will be used for our correspendence',
         error_description='Name is required',
         required=True,
-        bson_type='string'
+        bson_type='string',
     )
     Income = MongoField(
         label='Income (in USD)',
         description='Your income in USD',
         error_description='Income needs to be in a number',
-        bson_type='long'
+        bson_type='long',
+    )
+    LastIncomeTaxPaid = MongoField(
+        label='Last income tax paid (in USD)',
+        description='Please mention the correct amount in USD',
+        error_description='The value should be a number',
+        bson_type='int',
     )
 
     class Meta:
