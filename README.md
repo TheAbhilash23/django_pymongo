@@ -2,7 +2,6 @@
 
 <h3> The project aims to create a django application with the use of PyMongo library which is the official library for synchronous MongoDB operations</h3>
 
-
 <br>
 This project is intended to create a simple absctraction over PyMongo APIs to create an Object Docmument Mapping,
 for a better developer experience for someone coming from SQL based ORM based development background.
@@ -19,3 +18,5 @@ With this project you will learn
     <tr> <td>2</td> <td>0.0.2</td> <td>Create nested fields and apply validations their validations.</td><td>Not Started Yet </td></tr>
     <tr> <td>3</td> <td>0.0.3</td> <td>Create Migration model in django sqlite3 database and track the changes. </td> <td>Not Started Yet</td></tr>
 </table>
+
+<h2> PS:: Djongo is not used in this project.</h2>
