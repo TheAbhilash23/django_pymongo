@@ -7,8 +7,7 @@ This project is intended to create a simple absctraction over PyMongo APIs to cr
 for a better developer experience for someone coming from SQL based ORM based development background.
 
 <h4>
-With this project you will learn
-
+Eventually we will be taking learnings from this project to make generic Document styled NoSQL database ODMs that could connect to a wide variety of databases.
 </h4>
 
 <br>
@@ -20,3 +19,4 @@ With this project you will learn
 </table>
 
 <h2> PS:: Djongo is not used in this project.</h2>
+<h3> PPS:: Feel free to contact me at theak.92@gmail.com </h3>
