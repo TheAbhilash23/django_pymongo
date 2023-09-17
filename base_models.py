@@ -18,4 +18,9 @@ class BaseModelCollection(Collection):
             if isinstance(class_vars[var], MongoField):
                 print(var)
                 validation_schema['properties'][str(inflection.camelize(var, False))] = class_vars[var].get_field_validation_data()
+        validation_schema['required'] = []
+        for var in validation_schema['properties']:
+            if validation_schema['properties'][var].get('required') is True:
+                validation_schema['properties'][var].pop('required')
+                validation_schema['required'].append(var)
         return json_shema

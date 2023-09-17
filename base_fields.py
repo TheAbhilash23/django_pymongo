@@ -1,4 +1,7 @@
 import attrs
+import ipdb
+
+from base_validations import BASE_VALIDATIONS
 
 
 class MongoField:
@@ -9,6 +12,8 @@ class MongoField:
         import ipdb
         # ipdb.set_trace()
         for kwarg in kwargs.keys():
+            if kwarg not in BASE_VALIDATIONS:
+                continue
             setattr(self, '__attri_' + kwarg, kwargs.get(kwarg))
 
     @property
@@ -27,6 +32,6 @@ class MongoField:
         validation_data = {}
         for attr in vars(self):
             if attr.startswith('__attri_'):
-                validation_data[str(attr.strip('__attri_'))] = vars(self)[attr]
+                validation_data[str(attr.replace('__attri_', ''))] = vars(self)[attr]
         return validation_data
 

@@ -10,22 +10,23 @@ class KYC(BaseModelCollection):
 
     Name = MongoField(
         label='Name',
-        description='Your name that will be used for our correspendence',
-        error_description='Name is required',
+        extraDescription='Your name that will be used for our correspendence',
+        description='Name is required',
         required=True,
-        bson_type='string',
+        bsonType='string',
     )
     Income = MongoField(
         label='Income (in USD)',
-        description='Your income in USD',
-        error_description='Income needs to be in a number',
-        bson_type='long',
+        extraDescription='Your income in USD',
+        description='Income needs to be in a number',
+        bsonType='long',
     )
     LastIncomeTaxPaid = MongoField(
         label='Last income tax paid (in USD)',
-        description='Please mention the correct amount in USD',
-        error_description='The value should be a number',
-        bson_type='int',
+        extraDescription='Please mention the correct amount in USD',
+        description='The value should be a number',
+        bsonType='int',
+        required=True,
     )
 
     class Meta:
