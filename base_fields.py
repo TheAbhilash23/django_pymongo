@@ -35,3 +35,18 @@ class MongoField:
                 validation_data[str(attr.replace('__attri_', ''))] = vars(self)[attr]
         return validation_data
 
+
+class FileMongoField(MongoField):
+    pass
+
+
+class ArrayMongoField(MongoField):
+    pass
+
+
+class NestedMongoField(MongoField):
+    pass
+
+
+class MultiNestedMongoField(MongoField):
+    pass

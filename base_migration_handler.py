@@ -11,9 +11,11 @@ from database_connection import DEFAULT_DB
 
 MIGRATE_DEEZ = ('configurable_kyc.KYC',  # Yeah I am primeagenean...
                 )
+
+
 class MigrationHandler:
     # PLease do not remove the Todos, just add "#Done" when they're done.
-    # TODO: Phase 1 is to only create a simple json schema for models that are listed in the MIGRATE_DEEZ tuple.
+    # TODO: Phase 1 is to only create a simple json schema for models that are listed in MIGRATE_DEEZ tuple..
     # TODO: Phase 2 Figure out a way to handle migrations through SQLite3 database.
     #       This we can specify which schema should be strictly followed and which not.
     # TODO: Phase 3 to handle migration for nested fields.

@@ -14,7 +14,7 @@ Eventually we will be taking learnings from this project to make generic Documen
 <table>
     <th>Sr. No.</th> <th>Phase</th> <th>Details</th> <th>Status</th>
     <tr> <td>1</td> <td>0.0.1</td> <td>Generic Field Type: MongoField, Taking any number of kwargs but only the ones mentioned in the "$jsonSchema" documentation. If collection is not created it will create collection with schema validation as defined in models.py, If it is already present then it will call 'collMod' command to modify the collection validator.</td> <td> DONE</td></tr>
-    <tr> <td>2</td> <td>0.0.2</td> <td>Create nested fields and apply validations their validations.</td><td>Not Started Yet </td></tr>
+    <tr> <td>2</td> <td>0.0.2</td> <td>Create nested fields and apply validations their validations.</td><td>Active</td></tr>
     <tr> <td>3</td> <td>0.0.3</td> <td>Create Migration model in django sqlite3 database and track the changes. </td> <td>Not Started Yet</td></tr>
 </table>
 

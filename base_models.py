@@ -3,7 +3,6 @@ from pymongo.collection import Collection
 import inflection
 
 from base_fields import MongoField
-from database_connection import DefaultDatabase
 
 
 class BaseModelCollection(Collection):
